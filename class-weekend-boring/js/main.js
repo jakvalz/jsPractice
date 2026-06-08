@@ -20,20 +20,19 @@
 // }
 
 // }
-let h2 = document.querySelector('#placeToSee')
 
-document.querySelector('#check').addEventListener('click', check)
 
-function check() {
-    let day = document.querySelector('#day').value.toLowerCase();
-    
-    if (day === 'monday' || day === 'wednesday' || day === 'friday') {
-        h2.textContent = 'its a norm'
-    } else if (day === 'tuesday' || day === 'thursday') {
-        h2.textContent = 'its a class day'
-    } else if (day === 'sunday' || day === 'saturday') {
-        h2.textContent = 'prepare for the LORDs day!!!'
-    } else {
-        h2.textContent = 'giv me a day fam'
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

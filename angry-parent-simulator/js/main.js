@@ -31,27 +31,6 @@
 //   synth.speak(yellThis);
 // }
 
-document.querySelector('#yell').addEventListener('click', yellIt)
-
-function yellIt() {
-  let firstName = document.querySelector('#firstName').value
-  let fMName = document.querySelector('#firstMiddle').value
-  let lMName = document.querySelector('#lastMiddle').value
-  let lastName = document.querySelector('#lastName').value
-  
-  const h2 = document.querySelector('#placeToYell')
-  h2.textContent = `${firstName} ${fMName} ${lMName} ${lastName}`
-  
-  
-  
-  const synth = window.speechSynthesis;
-  const utterThis = new SpeechSynthesisUtterance(`${firstName} ${fMName} ${lMName} ${lastName}`);
-  synth.speak(utterThis);
-  
-  
-}
-
-
 
 
 
