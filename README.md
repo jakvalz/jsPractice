@@ -27,5 +27,5 @@ As you go, you’ll revisit and build confidence with:
 - 🔁 Revisit older exercises to strengthen recall 💪
 
 ## 🎈 Enjoy the practice!
-Every file here is part of your journey from **learning JS** to **writing JS confidently**. 🙌⚡
+Every file here is part of your journey from **learn w/ Leon bootcamp** and being able to **write JS confidently**⚡
 

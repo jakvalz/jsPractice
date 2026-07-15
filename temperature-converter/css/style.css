@@ -1,0 +1,45 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+h1 {
+  width: 100%;
+}
+
+label {
+  font-size: 34px;
+  margin-left: 20px;
+}
+
+h2, h3 {
+  width: 100%;
+  margin: 30px;
+  font-size: 40px;
+  font-weight: 800;
+  color: rgb(3, 142, 255);
+}
+
+h3 {
+  color: rgb(129, 198, 255)
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

@@ -35,7 +35,25 @@
 
 
 
+let fName = document.querySelector('#firstName')
+let fMid = document.querySelector('#firstMiddle')
+let lMid = document.querySelector('#lastMiddle')
+let lName = document.querySelector('#lastName')
+let yellBtn = document.querySelector('#yell')
+let yellOnScreen = document.querySelector('#placeToYell')
 
+yellBtn.addEventListener('click', yellIt)
+
+
+function yellIt(e) {
+    e.preventDefault()
+    let userInput = `${fName.value} ${fMid.value} ${lMid.value} ${lName.value}`
+    yellOnScreen.textContent = userInput
+    
+    //actually say it or 'yell it'
+    let utterance = new SpeechSynthesisUtterance(`${userInput}`);
+speechSynthesis.speak(utterance);
+}
 
 
 

@@ -101,8 +101,69 @@
 
 
 
+let purple = document.querySelector('#purple')
+let green = document.querySelector('#green')
+let blue = document.querySelector('#blue')
+let black = document.querySelector('#black')
+let red = document.querySelector('#red')
+let darkBlue = document.querySelector('#darkBlue')
+
+let body = document.querySelector('body')
+let div = document.querySelector('div')
+let txt = document.querySelector('h2')
+let img = document.querySelector('img')
+
+div.addEventListener('click', divDefault)
+img.addEventListener('click', makeHuge)
+purple.addEventListener('mouseover', makePurple)
+green.addEventListener('mouseover', makeGreen)
+blue.addEventListener('mouseover', makeBlue)
+black.addEventListener('mouseover', makeBlack)
+red.addEventListener('mouseover', makeRed)
+darkBlue.addEventListener('mouseover', makeDarkBlue)
 
 
+
+
+
+
+
+
+
+
+function divDefault() {
+    body.style.background = 'White'
+    txt.style.color = 'Black'
+    img.classList.remove('jumbosize')
+}
+function makeHuge() {
+    img.classList.toggle('regularSize')
+    img.classList.add('jumboSize')
+}
+function makePurple() {
+    body.style.background = 'Purple'
+    txt.style.color = 'white'
+}
+function makeGreen() {
+    body.style.background = 'Green'
+    txt.style.color = 'white'
+}
+function makeBlue() {
+    body.style.background = 'Blue'
+    txt.style.color = 'white'
+}
+function makeBlack() {
+    body.style.background = 'Black'
+    txt.style.color = 'white'
+}
+function makeRed() {
+    body.style.background = 'Red'
+    txt.style.color = 'white'
+}
+function makeDarkBlue() {
+    body.style.background = 'Darkblue'
+    txt.style.color = 'white'
+}
 
 
 

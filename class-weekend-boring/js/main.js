@@ -21,11 +21,25 @@
 
 // }
 
+let h2 = document.querySelector('#print2ScreenLocation')
 
+document.querySelector('#check').addEventListener('click', checkIt)
+document.querySelector('#myForm').addEventListener('keypress', enterKey)
 
-
-
-
+function checkIt(e) {
+    let day = document.querySelector('#day').value.toLowerCase()
+    if(day === 'monday') {
+        h2.textContent = 'too early for this, come back later....'
+    } else if(day === 'tuesday' || day === 'thursday') {
+        h2.textContent = 'its class day bruv'
+    } else if(day === 'wednesday') {
+        h2.textContent = 'its hump day apparently'
+    } else if(day === 'friday') {
+        h2.textContent = 'its friday, friday... come one errybody its friday'
+    } else if(day === 'saturday' || day === 'sunday') {
+        h2.textContent = 'the LORDs day is upon us'
+    }
+}
 
 
 

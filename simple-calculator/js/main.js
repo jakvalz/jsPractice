@@ -70,26 +70,57 @@
 
 
 
+let total = 0
+document.querySelector('#reset').addEventListener('click', reset)
+document.querySelector('#zilch').addEventListener('click', addZilch)
+document.querySelector('#theLORDsNum').addEventListener('click', add3)
+document.querySelector('#plusNiner').addEventListener('click', add9)
+document.querySelector('#negTwo').addEventListener('click', sub2)
+document.querySelector('#twoPennies').addEventListener('click', add2)
+document.querySelector('#subCompleteNum').addEventListener('click', sub7)
+document.querySelector('#infinity').addEventListener('click', makeInfinity)
+let result = document.querySelector('#result')
 
 
+function reset() {
+    total = 0
+    result.textContent = total
+}
 
+function addZilch() {
+    if(result.value === '' || result.value === 0) {
+        total += 0
+    }
+}
 
+function add3() {
+    total += 3
+    result.textContent = total
+}
 
+function add9() {
+    total += 9
+    result.textContent = total
+}
 
+function sub2() {
+    total -= 2
+    result.textContent = total
+}
 
+function add2() {
+    total += 2
+    result.textContent = total
+}
 
+function sub7() {
+    total -= 2
+    result.textContent = total
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+function makeInfinity() {
+    total += 1000000000000000000000000
+    result.textContent = 'too high a number to compute **beep** **boop**'
+}
 
 
