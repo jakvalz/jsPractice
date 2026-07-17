@@ -35,30 +35,23 @@
 
 
 
-let fName = document.querySelector('#firstName')
-let fMid = document.querySelector('#firstMiddle')
-let lMid = document.querySelector('#lastMiddle')
-let lName = document.querySelector('#lastName')
-let yellBtn = document.querySelector('#yell')
-let yellOnScreen = document.querySelector('#placeToYell')
-
-yellBtn.addEventListener('click', yellIt)
 
 
-function yellIt(e) {
-    e.preventDefault()
-    let userInput = `${fName.value} ${fMid.value} ${lMid.value} ${lName.value}`
-    yellOnScreen.textContent = userInput
-    
-    //actually say it or 'yell it'
-    let utterance = new SpeechSynthesisUtterance(`${userInput}`);
-speechSynthesis.speak(utterance);
+let firstName = document.querySelector('#firstName')
+let middleName = document.querySelector('#firstMiddle')
+let secondMiddle = document.querySelector('#lastMiddle')
+let lastName = document.querySelector('#lastName')
+
+let button = document.querySelector('#yell')
+button.addEventListener('click', yell)
+let yellIt = document.querySelector('#placeToYell')
+
+function yell(){
+    let textToYell = `${firstName.value} ${middleName.value} ${secondMiddle.value} ${lastName.value}`
+    yellIt.textContent = textToYell
+
+    //speech
+    let utterance = new SpeechSynthesisUtterance(textToYell);
+    speechSynthesis.speak(utterance);
+
 }
-
-
-
-
-
-
-
-
